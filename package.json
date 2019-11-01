@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "start": "node app.js",
-    "build": "netlify-lambda -b false build service",
     "serve": "nodemon app.js"
   },
   "dependencies": {
