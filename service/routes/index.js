@@ -1,6 +1,6 @@
 const route = require('express').Router()
-const citchat = require('./citchat')
+const chitchat = require('./chitchat')
 
-route.use('/citchat', citchat)
+route.use('/chitchat', chitchat)
 
 module.exports = route
