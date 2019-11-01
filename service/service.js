@@ -6,7 +6,7 @@ const service = express()
 
 service.use(express.urlencoded({ extended: true }))
 service.use(express.json())
-service.use('/', routes) // original lambda path : /.netlify/functions/index
+service.use('/.netlify/functions/service', routes) // original lambda path : /.netlify/functions/index
 
 service.use('*', (req, res) => {
     res.status(404).send({
