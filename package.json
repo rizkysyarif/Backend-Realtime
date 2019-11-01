@@ -4,11 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "build": "netlify-lambda -b false build service",
+    "serve": "nodemon app.js"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "dotenv": "^8.2.0",
+    "netlify-lambda": "^1.4.0",
+    "onesignal-node": "^2.1.1",
+    "serverless-http": "^1.10.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
   }
 }
